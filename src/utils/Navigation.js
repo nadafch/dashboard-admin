@@ -2,13 +2,8 @@ export const NAVIGATION = {
   DASHBOARD: {
     MAIN: "/",
   },
-  PRODUCT: {
-    MAIN: "/product",
-  },
-  INVENTORY: {
-    MAIN: "/inventory",
-    ITEMS: {
-      MAIN: "/gudang",
-    },
+  COMPONENTS: {
+    BUTTON: "/components/button",
+    TOOLTIP: "/components/tooltip",
   },
 };

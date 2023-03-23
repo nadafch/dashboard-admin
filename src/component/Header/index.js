@@ -7,7 +7,7 @@ export default function Component(props) {
 
   const Modal = () => {
     return (
-      <div className="w-full max-w-[200px] bg-white border absolute right-5 mt-14 p-3 rounded-lg shadow-lg ">
+      <div className="w-full max-w-[200px] bg-white border absolute  right-5 mt-5 lg:mt-14 p-3 rounded-lg shadow-lg ">
         <div
           role="button"
           className="flex justify-center items-center gap-2 text-sm"

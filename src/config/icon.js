@@ -1,3 +1,4 @@
-export { MdRestaurantMenu as IconMenu } from "react-icons/md";
-export { BiNotepad as Order } from "react-icons/bi";
-export { BsNewspaper as Bill } from "react-icons/bs";
+export { GrLinkPrevious as Back } from "react-icons/gr";
+export { MdKeyboardArrowDown as ArrowDown } from "react-icons/md";
+export { RiDashboard2Fill as Dashboard } from "react-icons/ri";
+export { TbComponents as Component } from "react-icons/tb";

@@ -6,6 +6,10 @@ const unProtectedRoutes = [
     pathname: NAVIGATION.DASHBOARD.MAIN,
     element: <DASHBOARD_MODULE.Dashboard />,
   },
+  {
+    pathname: NAVIGATION.COMPONENTS.BUTTON,
+    element: <DASHBOARD_MODULE.ButtonPage />,
+  },
 ];
 const routes = [
   ...unProtectedRoutes.map((el) => ({
