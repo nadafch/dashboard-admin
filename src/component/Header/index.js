@@ -20,7 +20,7 @@ export default function Component(props) {
   };
 
   return (
-    <div className="w-full bg-white lg:max-h-16 shadow-md lg:flex justify-between p-3 relative">
+    <div className="w-full bg-white lg:max-h-16 shadow-sm lg:flex justify-between p-3 sticky top-0">
       <div
         className="flex items-center text-xl text-stone-600 mb-5 lg:mb-0"
         onClick={props?.onClick}

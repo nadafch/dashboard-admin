@@ -6,7 +6,7 @@ export default function Component(props) {
     <COMPONENT.Text
       variant={props?.variant}
       type={props?.type}
-      className={clsx("text-sm")}
+      className={clsx("text-sm", props?.className)}
     >
       {props?.children}
     </COMPONENT.Text>

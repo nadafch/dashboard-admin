@@ -5,7 +5,7 @@ export default function Component(props) {
     <div
       role="button"
       className={clsx(
-        "flex items-center justify-center py-2 px-3 rounded-lg  border",
+        "flex items-center justify-center py-2 px-3 rounded-lg border hover:border-inherit",
         {
           " border-primary bg-secondary text-primary":
             !props?.variant || props?.variant === "primary",
@@ -22,6 +22,7 @@ export default function Component(props) {
       )}
       onClick={props?.onClick}
     >
+      {props?.icon && <span className="mr-1">{props?.icon}</span>}
       {props?.children}
     </div>
   );

@@ -2,6 +2,7 @@ import { NAVIGATION } from "./Navigation";
 import * as DASHBOARD_MODULE from "@Modules/index";
 
 const unProtectedRoutes = [
+  //components
   {
     pathname: NAVIGATION.DASHBOARD.MAIN,
     element: <DASHBOARD_MODULE.Dashboard />,
@@ -9,6 +10,11 @@ const unProtectedRoutes = [
   {
     pathname: NAVIGATION.COMPONENTS.BUTTON,
     element: <DASHBOARD_MODULE.ButtonPage />,
+  },
+  //form
+  {
+    pathname: NAVIGATION.FORM.ELEMENT,
+    element: <DASHBOARD_MODULE.FormElement />,
   },
 ];
 const routes = [

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import clsx from "classnames";
-import * as svgs from "@Configs/svgs";
 import * as icon from "@Configs/icon";
 import { useNavigate } from "react-router-dom";
 import * as COMPONENT from "@Components/index";
@@ -32,6 +31,17 @@ export default function Component(props) {
         },
       ],
     },
+    {
+      label: "Form",
+      asPath: "form",
+      icon: <icon.Form />,
+      children: [
+        {
+          label: "Form Element",
+          asPath: "form-element",
+        },
+      ],
+    },
   ];
 
   const onSelectMenu = (_menu) => {
@@ -51,7 +61,7 @@ export default function Component(props) {
     <div
       className={clsx(
         "w-full min-h-screen rounded-r-lg bg-white shadow-xl p-2 text-stone-500 transition-all duration-200 absolute z-10 md:static",
-        props?.isExtended ? "max-w-[180px]" : "hidden md:block max-w-[70px]"
+        props?.isExtended ? "max-w-[200px]" : "hidden md:block max-w-[60px]"
       )}
     >
       <div
@@ -83,7 +93,7 @@ export default function Component(props) {
             {activeMenu === index?.asPath ? (
               <div
                 className={clsx(
-                  "w-full max-h-11 absolute right-0 border-r-[6px] border-primary border-opacity-80 inset-0 rounded-r-md ",
+                  "w-full max-h-11 absolute right-0 border-r-[6px] border-primary border-opacity-80 inset-0 rounded-r-md transition-all duration-200",
                   props?.isExtended
                     ? "bg-gradient-to-l from-primary/40 to-white "
                     : "ml-4"
@@ -146,7 +156,7 @@ export default function Component(props) {
             ) : (
               <COMPONENT.Tooltip message={index?.label}>
                 <div
-                  className="text-2xl text-center"
+                  className="w-full justify-center text-2xl text-center"
                   onClick={() => onSelectMenu(index)}
                 >
                   {index?.icon}

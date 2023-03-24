@@ -7,6 +7,7 @@ export { default as Text2XL } from "./Text/2XL";
 export { default as Text3XL } from "./Text/3XL";
 export { default as BtnFilled } from "./Button/Filled";
 export { default as BtnOutlined } from "./Button/Outlined";
+export { default as InputText } from "./Input/Text";
 
 //molecules
 export { default as Cart } from "./Cart";

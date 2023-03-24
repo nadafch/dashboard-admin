@@ -6,4 +6,7 @@ export const NAVIGATION = {
     BUTTON: "/components/button",
     TOOLTIP: "/components/tooltip",
   },
+  FORM: {
+    ELEMENT: "/form/form-element",
+  },
 };
